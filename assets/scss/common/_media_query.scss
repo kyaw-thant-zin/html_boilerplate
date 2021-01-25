@@ -1,13 +1,13 @@
 /*********************** Media query ***********************/
 
-@mixin mediaQueryPc($pcMinWidth) {
-  @media screen and (min-width: $pcMinWidth) {
+@mixin mqPc() {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
 
-@mixin mediaQuerySp($spMaxWidth) {
-  @media screen and (max-width: $spMaxWidth) {
+@mixin mqSp() {
+  @media screen and (max-width: 768px) {
     @content;
   }
 }

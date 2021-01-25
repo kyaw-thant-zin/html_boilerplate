@@ -72,20 +72,20 @@ a:hover {
 
 .sp,
 .sp-only {
-  @include mediaQueryPc($pcMinWidth) {
+  @include mqPc() {
     display: none;
   }
-  @include mediaQuerySp($spMaxWidth) {
+  @include mqSp() {
     display: block;
   }
 }
 
 .pc,
 .pc-only {
-  @include mediaQueryPc($pcMinWidth) {
+  @include mqPc() {
     display: block;
   }
-  @include mediaQuerySp($spMaxWidth) {
+  @include mqSp() {
     display: none;
   }
 }
